@@ -1,0 +1,119 @@
+body {
+  font-family: "Aclonica";
+  background-image: url("images/banner.jpg");
+  background-repeat: no-repeat;
+}
+
+
+h1 {
+  color: #2B65EC;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+h2 {
+  font-family: 'Abhaya Libre';
+  font-size: 21px;
+  margin: 40px 0 8px 0;
+  color: #151B54;
+}
+h3 {
+  color: #5CB3FF;
+  font-size: 82px;
+  text-align: center;
+  text-shadow: 6px 4px 7px #2B3856;
+}
+h4 {
+  font-size: 30px;
+  color: #E0FFFF;
+  text-align: center;
+  font-weight:100;
+}
+h5 {
+  color: #48CCCD;
+  font-family: 'Architects Daughter';
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+blockquote, p{
+  font-family: FontAwesome;
+  font-size: 20;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3BB9FF;
+  width: 100%;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+li a:hover:not(.active){
+  background-color: #1589FF;   
+}
+.active {
+  background-color: #FDD017;
+}
+#line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background-color: #0066CC;
+}
+#about {
+  background-color: #BDEDFF;
+  text-align: center;
+  left: 0;
+}
+#photo {
+  width: 150px;
+}
+
+#projects {
+  text-align: center;
+}
+#project-list {
+  display: flex;                  /* Flex box */
+  flex-direction: row;            /* Left to right */
+  flex-wrap: wrap;                /* Wrap content */
+  justify-content: space-between; /* Spread space */
+}
+
+.project {
+  flex: 0 0 140px;                /* No grow/shrink, 140px width */
+  height: 500px;
+  margin-bottom: 10px;
+  background-color: #7AA3CC;
+  transition: 0.2s background-color;
+}
+.project:hover {
+  background-color: #0066CC;
+}
+
+
+#album {
+  text-align: center;
+  display: flex;                  /* Flex box */
+  flex-direction: column;            /* Left to right */
+  flex-wrap: wrap;                /* Wrap content */
+  justify-content: space-between;
+  background-color: #2B3856;
+}
+
+
+.subtext {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
