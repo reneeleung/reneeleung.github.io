@@ -1,8 +1,6 @@
 body {
   font-family: 'Libre Baskerville';
-  background-image: url("images/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #E0FFFF;
 }
 
 
@@ -19,6 +17,8 @@ h2 {
 }
 h3 {
   color: #5CB3FF;
+  margin: 0;
+  padding-top: 30px;
   font-size: 82px;
   text-align: center;
   text-shadow: 6px 4px 7px #2B3856;
@@ -26,6 +26,7 @@ h3 {
 h4 {
   font-size: 30px;
   color: #E0FFFF;
+  padding-top: 40px;
   text-align: center;
   font-weight:100;
 }
@@ -71,6 +72,11 @@ li a:hover:not(.active){
   top: 0;
   height: 4px;
   background-color: #0066CC;
+}
+#home {
+  background-image: url("images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #about {
   background-color: #BDEDFF;
