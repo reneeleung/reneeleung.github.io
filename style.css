@@ -13,6 +13,7 @@ h2 {
   font-family: 'Abhaya Libre';
   font-size: 21px;
   margin: 40px 0 8px 0;
+  text-align: center;
   color: #151B54;
 }
 h3 {
@@ -49,7 +50,7 @@ ul {
   background-color: #3BB9FF;
   width: 100%;
 }
-li {
+#navigationbar li {
   float: right;
 }
 li a {
@@ -61,6 +62,16 @@ li a {
 }
 li a:hover:not(.active){
   background-color: #1589FF;   
+}
+#about li {
+    float: center;
+}
+pre {
+    font-family: 'sans-serif';
+    font-size: 18px;
+    font-color: #E0FFFF;
+    background-color: #BDEDFF;
+    border: #BDEDFF;
 }
 .active {
   background-color: #FDD017;
