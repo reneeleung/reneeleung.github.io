@@ -61,7 +61,7 @@ li a {
   text-decoration: none;
 }
 li a:hover:not(.active){
-  background-color: #1589FF;   
+  background-color: #1589FF;
 }
 #about li {
     float: center;
@@ -101,12 +101,6 @@ pre {
 #projects {
   text-align: center;
 }
-#project-list {
-  display: flex;                  /* Flex box */
-  flex-direction: row;            /* Left to right */
-  flex-wrap: wrap;                /* Wrap content */
-  justify-content: space-between; /* Spread space */
-}
 
 .project {
   flex: 0 0 140px;                /* No grow/shrink, 140px width */
@@ -119,6 +113,64 @@ pre {
   background-color: #0066CC;
 }
 
+.project-list {
+    font-size: 0;
+}
+
+.project-list a {
+    display: inline-block;
+    width: 33%;
+    height: 50vh;
+    position: relative;
+}
+
+.project-list a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-list a:before, a:after {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-list a:before {
+    content: '';
+    height: 100%;
+    background: rgba(255,255,102,0.8);
+}
+.project-list a:after {
+    content:attr(data-title);
+    font-size:24px;
+    top: calc(50% - 0.5em);
+    left: 0;
+    text-align: center;
+    color: #2B65EC;
+}
+.project-list a:hover:before,  a:hover:after {
+    opacity: 1;
+}
+.project-list @media (max-width: 650px) {
+    a {
+        width: 50%;
+        height: 100vh;
+    }
+}
+.project-list @media (max-width: 480px) {
+    a {
+        width: 100%;
+    }
+}
+.project {
+  flex: 0 0 140px;                /* No grow/shrink, 140px width */
+  height: 500px;
+  margin-bottom: 10px;
+  background-color: #7AA3CC;
+  transition: 0.2s background-color;
+}
 
 #album {
   text-align: center;
