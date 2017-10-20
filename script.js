@@ -12,3 +12,9 @@ $(document).ready(function(){
     });
 });
 
+var logoHeight = $('#photo').height();
+    if (logoHeight < 104) {
+        var margintop = (104 - logoHeight) / 2;
+        $('#photo').css('margin-top', margintop);
+    }
+}
