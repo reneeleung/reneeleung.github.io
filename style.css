@@ -93,6 +93,7 @@ pre {
   background-color: #BDEDFF;
   text-align: center;
   left: 0;
+  overflow: hidden;
 }
 #photo {
   float: right;
