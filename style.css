@@ -167,7 +167,7 @@ pre {
 .project-list a:after {
     content:attr(data-title);
     white-space: pre-wrap;
-    top: calc(30% - 0.5em);
+    top: calc(25% - 0.5em);
     font-size:20px;
     left: 0;
     text-align: center;
