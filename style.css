@@ -133,8 +133,11 @@ pre {
         width:50%;
     }
     #photo {
-        max-height: 400px;
+        max-height: 300px;
         max-width: auto;
+    }
+    h3 {
+        font-size: 65px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -142,8 +145,11 @@ pre {
         width:100%;
     }
     #photo {
-        max-height: 300px;
+        max-height: 200px;
         max-width: auto;
+    }
+    h3 {
+        font-size: 58px;
     }
 }
 .project-list a img {
